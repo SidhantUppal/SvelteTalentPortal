@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TalentPortal", "TalentPortal\TalentPortal.csproj", "{B7440D12-3703-4537-81B2-7AC9674C1FC5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TalentPortal.BAL", "TalentPortal.BAL\TalentPortal.BAL.csproj", "{42170C36-B09E-4329-875C-B58D43DE7C5C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TalentPortal.DAL", "TalentPortal.DAL\TalentPortal.DAL.csproj", "{66120E05-B62E-4D4A-9881-5ABF82CC9DCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalentPortal.UI", "TalentPortal.UI\TalentPortal.UI.csproj", "{6B9520BD-ED87-4D39-A968-5B219F069F00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7440D12-3703-4537-81B2-7AC9674C1FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7440D12-3703-4537-81B2-7AC9674C1FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7440D12-3703-4537-81B2-7AC9674C1FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7440D12-3703-4537-81B2-7AC9674C1FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42170C36-B09E-4329-875C-B58D43DE7C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42170C36-B09E-4329-875C-B58D43DE7C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42170C36-B09E-4329-875C-B58D43DE7C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42170C36-B09E-4329-875C-B58D43DE7C5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66120E05-B62E-4D4A-9881-5ABF82CC9DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66120E05-B62E-4D4A-9881-5ABF82CC9DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66120E05-B62E-4D4A-9881-5ABF82CC9DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66120E05-B62E-4D4A-9881-5ABF82CC9DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B9520BD-ED87-4D39-A968-5B219F069F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B9520BD-ED87-4D39-A968-5B219F069F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B9520BD-ED87-4D39-A968-5B219F069F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B9520BD-ED87-4D39-A968-5B219F069F00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D5957C2-C771-4CCE-8B64-64D1E29A190E}
+	EndGlobalSection
+EndGlobal

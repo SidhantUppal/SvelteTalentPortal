@@ -1,0 +1,97 @@
+<li
+				aria-current={routes.find((route) => route.path === "/")
+					? "page"
+					: undefined}
+			>
+				<a href="/">Home</a>
+			</li>
+			<li
+				aria-current={routes.find((route) => route.path === "/about")
+					? "page"
+					: undefined}
+			>
+				<a href="/dsr"> Sent DSR </a>
+			</li>
+			<li
+				aria-current={routes.find((route) => route.path === "/blog")
+					? "page"
+					: undefined}
+			>
+				<a href="/dsr/add">Add DSR</a>
+			</li>
+			<li
+				aria-current={routes.find((route) => route.path === "/report")
+					? "page"
+					: undefined}
+				class="{linkDropdown ? 'menu-active' : ''} menu"
+			>
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
+				<!-- svelte-ignore a11y-no-static-element-interactions -->
+				<!-- svelte-ignore a11y-missing-attribute -->
+				<a
+					on:click={toggleLink}
+					aria-haspopup="true"
+					aria-expanded={linkDropdown}
+					class="dropdown-toggle"
+				>
+					Reports
+					<ul
+						class="dropdown-content"
+						style="display: {linkDropdown ? 'block' : 'none'}"
+						use:links
+					>
+						<li
+							aria-current={routes.find(
+								(route) => route.path === "/report/received",
+							)
+								? "page"
+								: undefined}
+						>
+							<a
+								href="/report/received"
+								use:link
+								area-haspopup="true"
+								area-expanded={linkDropdown}>Received Reports</a
+							>
+						</li>
+						<li
+							aria-current={routes.find(
+								(route) => route.path === "/report/sent",
+							)
+								? "page"
+								: undefined}
+						>
+							<a
+								href="/report/sent"
+								use:link
+								area-haspopup="true"
+								area-expanded={linkDropdown}>Sent Reports</a
+							>
+						</li>
+						<li
+							aria-current={routes.find(
+								(route) => route.path === "/report/new",
+							)
+								? "page"
+								: undefined}
+						>
+							<a
+								href="/report/new"
+								use:link
+								area-haspopup="true"
+								area-expanded={linkDropdown}>New Reports</a
+							>
+						</li>
+					</ul>
+				</a>
+			</li>
+			{#if !user}
+				<li
+					aria-current={routes.find(
+						(route) => route.path === "/auth/login",
+					)
+						? "page"
+						: undefined}
+				>
+					<a href="/auth/login">Login</a>
+				</li>
